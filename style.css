@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(./assets/wooden-floor-1853409_1920.jpg);
+}
+@font-face {
+    font-family: 'DigitalNumbers';
+    src: url('./fonts/DigitalNumbers-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.calculator {
+    background-image: url(./assets/rechner.png);
+    background-size: cover;
+    width: 300px;
+    height: 479px;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; /* Zentriert den Inhalt horizontal */
+    align-items: flex-start; /* Startet den Inhalt am oberen Rand */
+    padding-top: 70px; /* Fügt Abstand von oben hinzu */
+    
+}
+
+.tasten {
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Zentriert Display und Buttons horizontal */
+    gap: 20px; /* Abstand zwischen Display und Buttons */
+}
+
+#display {
+margin-right: 10px;
+    width: 90%;
+    height: 57px;
+    text-align: right;
+    padding: 10px;
+    font-size: 24px;
+    border: none;
+    font-family: 'VT323', monospace;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    font-family: 'DigitalNumbers', monospace;
+    background-color: transparent;
+    color: black;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4px; /* Abstand zwischen den Tasten */
+    padding-top: 28px;
+  
+}
+
+button {
+    background-image: url(./assets/button.png);
+    background-size: cover;
+    height: 47px;
+    width: 46px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+    border-radius: 12px;
+    font-weight: 900;
+    background-color: transparent;
+    box-shadow: 1px0 1px 1px rgba(0, 0, 0, 0.2);
+   
+}
+
+button:active {
+    transform: translateY(1px);
+}
